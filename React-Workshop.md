@@ -1,47 +1,44 @@
 # An Introduction to React Workshop
+
 Haley Beavers, Franchine Ninh & Noah Strong
 Novemebr 13, 2018
 
 React is considered a JavaScript library for building user interfaces. It uses the idea of splitting up a web page into reusable components with JSX, HTML code and Javascript logic. React is unique in that it is dynamic and responsive to user input.
 
+## Installation Instructions
 
-# Installation Instructions
-Node.js & NPM 
+Node.js & NPM
 https://nodejs.org/en/.
-```sh
+
 $ npm install -d
 $ node app
-```
+
 Create-React-App
 https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html
 
 Install the global package:
-```sh
 $ npm install -g create-react-app
-```
 
 Now create a new app:
-```sh
 $ create-react-app hello-world
-```
-
 
 Bootstrap for React
 https://react-bootstrap.github.io/
 
-# Features
+## Features
+
 * Components
-    * interactable objects
-* Props 
-    * read-only information to be displayed
-    * passed down from one component to its child/children as needed
+  * interactable objects
+* Props
+  * read-only information to be displayed
+  * passed down from one component to its child/children as needed
 * State
-    * each component maintains its own state
-    * Read and write - makes components interactive
-    * once changed, then components render again
+  * each component maintains its own state
+  * Read and write - makes components interactive
+  * once changed, then components render again
 
+## New Features
 
-# New Features!
 Markdown is a lightweight markup language based on the formatting conventions that people naturally use in email.  As [John Gruber] writes on the [Markdown site][df1]
 
 > The overriding design goal for Markdown's
@@ -54,7 +51,7 @@ Markdown is a lightweight markup language based on the formatting conventions th
 
 This text you see here is *actually* written in Markdown! To get a feel for Markdown's syntax, type some text into the left window and watch the results in the right.
 
-### Tech
+## Tech
 
 Dillinger uses a number of open source projects to work properly:
 
@@ -71,25 +68,6 @@ Dillinger uses a number of open source projects to work properly:
 And of course Dillinger itself is open source with a [public repository][dill]
  on GitHub.
 
-### Installation
-
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
-```sh
-$ cd dillinger
-$ npm install -d
-$ node app
-```
-
-For production environments...
-
-```sh
-$ npm install --production
-$ NODE_ENV=production node app
-```
-
 ### Plugins
 
 Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
@@ -102,7 +80,6 @@ Dillinger is currently extended with the following plugins. Instructions on how 
 | OneDrive | [plugins/onedrive/README.md][PlOd] |
 | Medium | [plugins/medium/README.md][PlMe] |
 | Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
-
 
 ### Development
 
