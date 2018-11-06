@@ -8,8 +8,10 @@ class App extends React.Component {
     
     this.state = {
       courses: require('./Courses.js'),
-      term: '',
-      dept: '',
+      term1: '',
+      dept1: '',
+      term2: '',
+      dept2: '',
       search: false
     };
   }
@@ -22,26 +24,31 @@ class App extends React.Component {
         <Form inline> 
           <FormGroup controlId="formControlsSelect">
             <ControlLabel>Term</ControlLabel>{' '}
-            <FormControl componentClass="select" placeholder="" onChange={ (e) => this.setState({ term: e.target.value })}>
+            <FormControl componentClass="select" placeholder="" onChange={ (e) => this.setState({ term1: e.target.value })}>
               <option>select</option>
               <option>Fall 2018</option>
               <option>Winter 2019</option>
               <option>Spring 2019</option>
+              <option>Fall 2019</option>
             </FormControl>{' '}
             <ControlLabel>Dept</ControlLabel>{' '}
-            <FormControl componentClass="select" placeholder="" onChange={ (e) => this.setState({ dept: e.target.value })}>
+            <FormControl componentClass="select" placeholder="" onChange={ (e) => this.setState({ dept1: e.target.value })}>
               <option>select</option>
               <option>Computer Science</option>
               <option>English</option>
             </FormControl>{' '}
           </FormGroup>
-          <Button type="button" onClick={ () => this.setState({ search: true})}>Search</Button>
+          <Button type="button" onClick={ () => {
+                                                 this.setState({ search: true}); 
+                                                 this.setState({ term2: this.state.term1});
+                                                 this.setState({ dept2: this.state.dept1});
+                                                 }}>Search</Button>
         </Form>
         {this.state.search && <View 
           courses={this.state.courses}
           view={this.state.view}
-          term={this.state.term}
-          dept={this.state.dept}
+          term={this.state.term2}
+          dept={this.state.dept2}
           />}
       </div>
     );
