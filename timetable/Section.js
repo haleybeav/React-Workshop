@@ -6,12 +6,6 @@ const Section = ({sections}) => {
                 'room', 'days', 'time', 'cap', 
                 'enrl','avail'];
 
-  /*
-  let filtered_sections = sections.filter((section) => {
-     return section.term === term;
-  });
-  */
-
   return (
   <Table striped bordered condensed hover>
     <thead>
