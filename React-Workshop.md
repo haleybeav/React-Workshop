@@ -86,15 +86,25 @@ Let's explore the component structure and the data flow of our example, TimeTabl
 
 **State**
 
-From App.js we render the heading, drop down selection boxes from term and department, and a child component. We also store an object called state. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
+In App.js we store an object called state, this means that App.js is a stateful component. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
 
 You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
 
 **App**
 
+From App.js we render the heading, drop down selection boxes from term and department, and a child component. We also store some data in state. We load an object called courses which holds all of our data about classes available. 
+
+// INSERT PICTURE OF COURSES
+
+We will gradually parse and use this data in child components. The user's desired department, term, and all of the course data is passed to View.js, a child component.
+
 **View**
 
+In this component, we filter our course data based on the department and term selected by the user. After we have identified and stored the data matching the query, we pass this data on to the Course.js child component. 
+
 **Course**
+
+
 
 **Section**
 
