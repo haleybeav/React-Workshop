@@ -63,7 +63,7 @@ There are other options for CSS-based design templates, another popular option i
 For those of you who develop using Chrome, there is a useful DevTools add-on called React Developer Tools available as a Chrome extension on the Chrome web store. This extension allows you to view state and components in DevTools, which is very helpful when debugging React Applications.
 
 
-## Features
+## Features of React Applications
 
 * Components
   * Interactable Objects
@@ -76,7 +76,7 @@ For those of you who develop using Chrome, there is a useful DevTools add-on cal
   * once changed, then components render again
 
 
-## Components
+## Structure
 
 You can think of components in React as classes in object-oriented programming; they are reusable pieces that stand on their own and provide logical structure to projects. React applications consist of many components, but these components don't handle data in the same way that classes do. Components are meant to act almost as functional parts that flow together. Of course, not all applications can be made perfectly functional, but it's best to stick to this ideal as much as possible when developing with React. This concept manifests itself as unidirectional data flow in React. This means that components are often nested with child components being rendered from parents, and parents from grandparents, etc. This means the most data is passed from the highest-order component and slowly narrows and becomes more specialized as it is passed to the deepest child component. This creates a functional-esque data relationship.
 
@@ -84,11 +84,15 @@ You can think of components in React as classes in object-oriented programming; 
 
 Let's explore the component structure and the data flow of our example, TimeTable. The file index.js acts as the root of the application, and renders the App.js component. 
 
+// INSERT PICTURE OF INDEX
+
 **State**
 
 In App.js we store an object called state, this means that App.js is a stateful component. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
 
 You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
+
+// INSERT PICTURE OF STATE 
 
 **App**
 
@@ -96,20 +100,32 @@ From App.js we render the heading, drop down selection boxes from term and depar
 
 // INSERT PICTURE OF COURSES
 
-We will gradually parse and use this data in child components. The user's desired department, term, and all of the course data is passed to View.js, a child component.
+We will gradually parse and use this data in child components. The user's desired department, term, and all of the course data is passed to View.js, a child component as a prop. Prop is short for properties and are like arguments passed from one component to another.
+
+// INSERT PICTURE OF APP
 
 **View**
 
 In this component, we filter our course data based on the department and term selected by the user. After we have identified and stored the data matching the query, we pass this data on to the Course.js child component. 
 
+// INSERT PICTURE OF VIEW
+
 **Course**
 
+The Course.js component displays a collapsible panel for each individual course and passes on that course's sections to the Section.js child component. 
 
+// INSERT PICTURE OF COURSE
 
 **Section**
 
-In our example TimeTable, 
+We finally create a table and display all of the sections available for that course. 
 
+As you can see, data trickled all the way down from App.js to the deepest child component. 
+
+// INSERT PICTURE OF SECTION
+
+
+## Eh?
 
 
 
