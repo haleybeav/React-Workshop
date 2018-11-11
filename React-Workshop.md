@@ -7,15 +7,15 @@ React is considered a JavaScript library developed by FaceBook for building user
 
 For those of you who do not use TimeTable, it is an alternative to ClassFinder. Users can view all classes and sections available from a department during a selected term.
 
+// INSERT PICTURE OF TIMETABLE
+
+Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To follow along with us, visit this link: <https://codesandbox.io/s/8z56kz7z42>.
+
 ## What Makes React sooo cool
 
 ## The DOM
 
 ## Keys
-
-// INSERT PICTURE OF TIMETABLE
-
-Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To follow along with us, visit this link: <https://codesandbox.io/s/8z56kz7z42>.
 
 ## Installation Instructions
 
@@ -83,6 +83,10 @@ In App.js we store an object called state, this means that App.js is a stateful 
 
 You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
 
+![alt text][state]
+
+[state]: ./photos/Appjs_top.png "AppjsTop-State"
+
 ## Structure
 
 You can think of components in React as classes in object-oriented programming; they are reusable pieces that stand on their own and provide logical structure to projects. React applications consist of many components, but these components don't handle data in the same way that classes do. Components are meant to act almost as functional parts that flow together. Of course, not all applications can be made perfectly functional, but it's best to stick to this ideal as much as possible when developing with React. This concept manifests itself as unidirectional data flow in React. This means that components are often nested with child components being rendered from parents, and parents from grandparents, etc. This means the most data is passed from the highest-order component and slowly narrows and becomes more specialized as it is passed to the deepest child component. This creates a functional-esque data relationship.
@@ -90,17 +94,8 @@ You can think of components in React as classes in object-oriented programming; 
 ### Index
 
 Let's explore the component structure and the data flow of our example, TimeTable. The file index.js acts as the root of the application, and renders the App.js component.
+
 // INSERT PICTURE OF INDEX
-
-### State
-
-In App.js we store an object called state, this means that App.js is a stateful component. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
-
-You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
-
-![alt text][state]
-
-[state]: ./photos/Appjs_top.png "AppjsTop-State"
 
 ### App
 
