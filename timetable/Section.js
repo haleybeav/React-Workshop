@@ -11,15 +11,15 @@ const Section = ({sections}) => {
     <thead>
       <tr>
         {attr.map((a) => 
-          <th>{a}</th>  
+          <th key={a}>{a}</th>
         )}
       </tr>
     </thead>
     <tbody>
       {sections.map((section) =>
-        <tr>
+        <tr key={section.crn}>
           {attr.map((a) => 
-            <td>
+            <td key={a}>
               {section[a]}
             </td>
           )}
