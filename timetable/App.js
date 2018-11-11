@@ -1,6 +1,7 @@
 import React from 'react';
 import View from './View';
 import { Form, FormGroup, FormControl, ControlLabel, Button } from 'react-bootstrap';
+import './App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -19,19 +20,22 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>TimeTable</h1>
-        <h3>Western Washington University</h3>
-        <Form inline> 
+        <div id ='cap'>
+          <img width='50%' height='50%' alt='keyboard' src={require('./keyboard.png')} />
+        </div>
+        <h1 id='timetable'>TimeTable</h1>
+        <Form inline id='form'> 
           <FormGroup controlId="formControlsSelect">
-            <ControlLabel>Term</ControlLabel>{' '}
+            <ControlLabel id='term'>Term</ControlLabel>{' '}
             <FormControl componentClass="select" placeholder="" onChange={ (e) => this.setState({ term1: e.target.value })}>
               <option>select</option>
+              <option>Spring 2018</option>
               <option>Fall 2018</option>
               <option>Winter 2019</option>
               <option>Spring 2019</option>
               <option>Fall 2019</option>
             </FormControl>{' '}
-            <ControlLabel>Dept</ControlLabel>{' '}
+            <ControlLabel id='dept'>Dept</ControlLabel>{' '}
             <FormControl componentClass="select" placeholder="" onChange={ (e) => this.setState({ dept1: e.target.value })}>
               <option>select</option>
               <option>Computer Science</option>

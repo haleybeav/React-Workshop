@@ -3,9 +3,9 @@ import { Panel, PanelGroup } from 'react-bootstrap';
 import Section from './Section';
 
 const Course = ({courses}) => (
-  <PanelGroup>
+  <PanelGroup id="course_list">
     {courses.map((course) => 
-      <Panel>
+      <Panel key={course.abrv}>
         <Panel.Heading>
           <Panel.Title toggle>{course.abrv} - {course.name}, {course.credits}</Panel.Title>
         </Panel.Heading>
