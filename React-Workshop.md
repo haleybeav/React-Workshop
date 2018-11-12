@@ -15,17 +15,38 @@ For those of you who do not use TimeTable, it is an alternative to ClassFinder. 
 
 Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To follow along with us, visit this link: <https://codesandbox.io/s/8z56kz7z42>.
 
-## More infomation related to React
+## Features of React Applications
 
-### React is reactable.
+### Components
 
-### The DOM
+* Interactable Objects
 
-The Document Object Model is what generated through out code.
+### Props
+
+* read-only information to be displayed
+* passed down from one component to its child/children as needed
+
+### State
+
+In App.js we store an object called state, this means that App.js is a stateful component. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
+
+You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
+
+![alt text][state]
+
+[state]: ./photos/Appjs_top.png "AppjsTop-State"
 
 ### Keys in React
 
-Keys in React are peticular...
+Keys in React are...
+
+### The DOM
+
+The Document Object Model.
+
+### CSS
+
+Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
 
 ## Installation Instructions
 
@@ -75,27 +96,6 @@ There are other options for CSS-based design templates, another popular option i
 ### React Developer Tools
 
 For those of you who develop using Chrome, there is a useful DevTools add-on called React Developer Tools available as a Chrome extension on the Chrome web store. This extension allows you to view state and components in DevTools, which is very helpful when debugging React Applications.
-
-### Features of React Applications
-
-#### Components
-
-* Interactable Objects
-
-#### Props
-
-* read-only information to be displayed
-* passed down from one component to its child/children as needed
-
-#### State
-
-In App.js we store an object called state, this means that App.js is a stateful component. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
-
-You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
-
-![alt text][state]
-
-[state]: ./photos/Appjs_top.png "AppjsTop-State"
 
 ## Structure
 
