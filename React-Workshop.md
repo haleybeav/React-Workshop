@@ -45,7 +45,7 @@ DOM stands for the Document Object Model. If you type ctrl+shift+c while in the 
 
 ### Keys in React
 
-Keys in React are used to differntiate between different child components. When these child components are changed the DOM is able to compare each component using its unique key and decide if it needs to be rerendered making React as efficient as possible.
+Keys in React are used to differntiate between different child components. When these child components are changed the DOM is able to compare each component using its unique key and decide if it needs to be rerendered. This helps React to change the DOM as little as possible, making it more efficient.
 
 ### HTML
 
