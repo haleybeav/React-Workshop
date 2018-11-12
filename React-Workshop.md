@@ -55,10 +55,10 @@ HTML is a markup language. It is composed of tags and each tag has attributes th
 
 Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
 
-* ID
+* ID:
 More specific, each ID name can only map to one HTML tag. 
 
-* ClassName
+* ClassName:
 Many tags can share the same ClassName attribute, this is used when the same styling must be applied to many tags.
 
 ## Installation Instructions
