@@ -3,19 +3,29 @@
 Haley Beavers, Franchine Ninh & Noah Strong
 Novemebr 13, 2018
 
-React is considered a JavaScript library developed by FaceBook for building user interfaces. It uses the idea of splitting up a web page into reusable components with JSX, HTML, and Javascript logic. React is unique in that it uses unidirectional data flow to create dynamic and responsive webpages. Since its inception circa 2015, React has come to surpass Angular as the leading JavaScript framework and many applications are now built partially or entirely using React, some examples include Instagram, FaceBook, and Netflix. Today, we are going to explore the rudimentary ideas of React through an example near and dear to the hearts of many Western students; TimeTable.
+React is considered a JavaScript library developed by FaceBook for building user interfaces. It uses the idea of splitting up a web page into reusable components with JSX, HTML, and Javascript logic. React is unique in that it uses unidirectional data flow to create dynamic and responsive webpages. Since its inception circa 2015, React has come to surpass Angular as the leading JavaScript framework and many applications are now built partially or entirely using React, some examples include Instagram, FaceBook, and Netflix.
+
+Today, we are going to explore the rudimentary ideas of React through an example near and dear to the hearts of many Western students; TimeTable.
 
 For those of you who do not use TimeTable, it is an alternative to ClassFinder. Users can view all classes and sections available from a department during a selected term.
 
-// INSERT PICTURE OF TIMETABLE
+![alt text][timetable]
+
+[timetable]: ./photos/Timetable.png "Timetable web"
 
 Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To follow along with us, visit this link: <https://codesandbox.io/s/8z56kz7z42>.
 
-## What Makes React sooo cool
+## More infomation related to React
 
-## The DOM
+### React is reactable.
 
-## Keys
+### The DOM
+
+The Document Object Model is what generated through out code.
+
+### Keys in React
+
+Keys in React are peticular...
 
 ## Installation Instructions
 
@@ -95,13 +105,17 @@ You can think of components in React as classes in object-oriented programming; 
 
 Let's explore the component structure and the data flow of our example, TimeTable. The file index.js acts as the root of the application, and renders the App.js component.
 
-// INSERT PICTURE OF INDEX
+![alt text][index]
+
+[index]: ./photos/indexjs.png "index code"
 
 ### App
 
 From App.js we render the heading, drop down selection boxes from term and department, and a child component. We also store some data in state. We load an object called courses which holds all of our data about classes available.
 
-// INSERT PICTURE OF COURSES
+![alt text][courses]
+
+[courses]: ./photos/coursesjs.png "courses json code"
 
 We will gradually parse and use this data in child components. The user's desired department, term, and all of the course data is passed to View.js, a child component as a prop. Prop is short for properties and are like arguments passed from one component to another.
 
