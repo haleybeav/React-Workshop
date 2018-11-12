@@ -9,9 +9,13 @@ Today, we are going to explore the rudimentary ideas of React through an example
 
 For those of you who do not use TimeTable, it is an alternative to ClassFinder. Users can view all classes and sections available from a department during a selected term.
 
-![alt text][timetable]
+![alt text][timetablewwu]
 
-[timetable]: ./photos/Timetable.png "Timetable web"
+[timetablewwu]: ./photos/wwutimetable.png "WWU Timetable web"
+
+<!-- ![alt text][timetablementors]
+
+[timetablementors]: ./photos/Timetable.png "Mentors Timetable web" -->
 
 Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To follow along with us, visit this link: <https://codesandbox.io/s/8z56kz7z42>.
 
@@ -19,12 +23,11 @@ Using React, we will split TimeTable into logical pieces that can render dynamic
 
 ### Components
 
-* Interactable Objects
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. They are like JavaScript functions. They accept arbitrary inputs, or props, and return React elements describing what should appear on the screen.
 
 ### Props
 
-* read-only information to be displayed
-* passed down from one component to its child/children as needed
+Props is short for properties. They are how components talk to each other. Props information flow downwards from the parent component.
 
 ### State
 
@@ -47,6 +50,12 @@ The Document Object Model.
 ### CSS
 
 Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
+
+* ID
+
+* ClassName
+
+//PIC OF EXAMPLE CSS CODE
 
 ## Installation Instructions
 
