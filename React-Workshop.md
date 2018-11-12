@@ -17,7 +17,7 @@ For those of you who do not use TimeTable, it is an alternative to ClassFinder. 
 
 [timetablementors]: ./photos/Timetable.png "Mentors Timetable web" -->
 
-Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To follow along with us, visit this link: <https://codesandbox.io/s/8z56kz7z42>.
+Using React, we will split TimeTable into logical pieces that can render dynamically. We will be using SandBox as our programming environment, but you can of course develop React applications in the eidtor of your choice. To view the completed TimeTable example go to: <https://codesandbox.io/s/8z56kz7z42>. To follow along with us as we code live, visit this link: <https://codesandbox.io/new>.
 
 ## Features of React Applications
 
