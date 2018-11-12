@@ -39,23 +39,27 @@ You can have multiple components with their own state in an application, but for
 
 [state]: ./photos/Appjs_top.png "AppjsTop-State"
 
-### Keys in React
-
-Keys in React are...
-
 ### The DOM
 
-The Document Object Model.
+DOM stands for the Document Object Model. If you type ctrl+shift+c while in the browser, you will pull up Dev Tools. In the Elements tab, you can view the DOM tree built that represents the current webpage you are on. Dev Tools is extremely useful, the Console option can be used to debug JavaScript and other web-based programs. You can also download a special Dev Tool extension for Chrome mentioned in the installation guide above that is really helpful for debugging React applications.
+
+### Keys in React
+
+Keys in React are used to differntiate between different child components. When these child components are changed the DOM is able to compare each component using its unique key and decide if it needs to be rerendered making React as efficient as possible.
+
+### HTML
+
+HTML is a markup language. It is composed of tags and each tag has attributes that can be used for styling and adding additional functionality to tags.
 
 ### CSS
 
 Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
 
 * ID
+More specific, each ID name can only map to one HTML tag. 
 
 * ClassName
-
-//PIC OF EXAMPLE CSS CODE
+Many tags can share the same ClassName attribute, this is used when the same styling must be applied to many tags.
 
 ## Installation Instructions
 
@@ -128,27 +132,19 @@ From App.js we render the heading, drop down selection boxes from term and depar
 
 We will gradually parse and use this data in child components. The user's desired department, term, and all of the course data is passed to View.js, a child component as a prop. Prop is short for properties and are like arguments passed from one component to another.
 
-// PICTURE OF APP
-
 ### View
 
 In this component, we filter our course data based on the department and term selected by the user. After we have identified and stored the data matching the query, we pass this data on to the Course.js child component.
 
-// INSERT PICTURE OF VIEW
-
 ### Course
 
 The Course.js component displays a collapsible panel for each individual course and passes on that course's sections to the Section.js child component.
-
-// INSERT PICTURE OF COURSE
 
 ### Section
 
 We finally create a table and display all of the sections available for that course.
 
 As you can see, data trickled all the way down from App.js to the deepest child component.
-
-// INSERT PICTURE OF SECTION
 
 #### License
 
