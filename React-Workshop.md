@@ -25,12 +25,13 @@ Using React, we will split TimeTable into logical pieces that can render dynamic
 
 Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. They are like JavaScript functions. They accept arbitrary inputs, or props, and return React elements describing what should appear on the screen.
 
+Let's try creating a simple "Greeting" component.
+
 ```JavaScript
 class Greeting extends React.Component{
   render(){
-    console.log("Rendering 'Greeing'");
     return (
-      <p>Hello, Person</p>
+      <p>Hello, Fellow Human!</p>
     )
   }
 }
@@ -40,13 +41,50 @@ class Greeting extends React.Component{
 
 Props is short for properties. They are how components talk to each other. Props information flow downwards from the parent component.
 
+Let's try adding props to our component.
+
+```javascript
+/*
+  In App(), do:
+    <Greeting name="Perry" />
+ */
+
+class Greeting extends React.Component {
+  render() {
+    return (
+      <p>
+        Good Day, {this.props.name}!
+      </p>
+    );
+  }
+}
+```
+
 ### State
 
 In App.js we store an object called state, this means that App.js is a stateful component. State is what makes React dynamic. Whenever data in state is changed, the application will re-render to reflect that change. State can only be manipulated within the component it is bound. In addition to storing data in state, you can also bind functions to state. So if you want to change state from a child component, you must pass a function that manipulates state and that has been bound to the state of the parent component down to that child component.
 
 You can have multiple components with their own state in an application, but for our example it is only necessary to have one state object. Often when working with time, components will need to have their own state.
 
-![alt text][state]
+Finally, let's add some state to our `<Greeting />` component.
+
+```javascript
+class Greeting extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      time: new Date().getHours() > 12 ? "Afternoon" : "Day"
+    };
+  }
+  render() {
+    return (
+      <p>
+        Good {this.state.time}, {this.props.name}!
+      </p>
+    );
+  }
+}
+```
 
 [state]: ./photos/Appjs_top.png "AppjsTop-State"
 
