@@ -25,6 +25,17 @@ Using React, we will split TimeTable into logical pieces that can render dynamic
 
 Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. They are like JavaScript functions. They accept arbitrary inputs, or props, and return React elements describing what should appear on the screen.
 
+```JavaScript
+class Greeting extends React.Component{
+  render(){
+    console.log("Rendering 'Greeing'");
+    return (
+      <p>Hello, Person</p>
+    )
+  }
+}
+```
+
 ### Props
 
 Props is short for properties. They are how components talk to each other. Props information flow downwards from the parent component.
