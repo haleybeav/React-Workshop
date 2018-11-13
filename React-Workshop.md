@@ -11,7 +11,7 @@ For those of you who do not use TimeTable, it is an alternative to ClassFinder. 
 
 ![alt text][timetablewwu]
 
-[timetablewwu]: ./photos/wwutimetable.png "WWU Timetable web"
+[timetablewwu]: ./photos/timetable.png "WWU Timetable web"
 
 <!-- ![alt text][timetablementors]
 
