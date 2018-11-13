@@ -167,17 +167,9 @@ You can think of components in React as classes in object-oriented programming; 
 
 Let's explore the component structure and the data flow of our example, TimeTable. The file index.js acts as the root of the application, and renders the App.js component.
 
-<>![alt text][index]
-
-<>[index]: ./photos/indexjs.png "index code"
-
 ### App
 
 From App.js we render the heading, drop down selection boxes from term and department, and a child component. We also store some data in state. We load an object called courses which holds all of our data about classes available.
-
-<>![alt text][courses]
-
-<>[courses]: ./photos/coursesjs.png "courses json code"
 
 We will gradually parse and use this data in child components. The user's desired department, term, and all of the course data is passed to View.js, a child component as a prop. Prop is short for properties and are like arguments passed from one component to another.
 
