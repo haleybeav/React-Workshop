@@ -100,15 +100,43 @@ Keys in React are used to differntiate between different child components. When 
 
 HTML is a markup language. It is composed of tags and each tag has attributes that can be used for styling and adding additional functionality to tags.
 
+```JavaScript
+<h1>Hello World</h1>
+
+<p>Good {this.state.time}, {this.props.name}!</p>
+```
+
 ### CSS
 
 Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML.
 
 * ID:
-More specific, each ID name can only map to one HTML tag. 
+  * More specific, each ID name can only map to one HTML tag.
 
-* ClassName:
-Many tags can share the same ClassName attribute, this is used when the same styling must be applied to many tags.
+* ClassName
+  * Many tags can share the same ClassName attribute, this is used when the same styling must be applied to many tags.
+
+#### CSS code
+
+```JavaScript
+#hello{
+    text-align: center;
+    font-weight: bold;
+}
+
+.time{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 110%;
+}
+```
+
+#### HTML refering to CSS
+
+```JavaScript
+<h1 id="hello">Hello World</h1>
+
+<p className="time">Good {this.state.time}, {this.props.name}!</p>
+```
 
 ## Installation Instructions
 
