@@ -90,11 +90,15 @@ class Greeting extends React.Component {
 
 ### The DOM
 
-DOM stands for the Document Object Model. If you type ctrl+shift+c while in the browser, you will pull up Dev Tools. In the Elements tab, you can view the DOM tree built that represents the current webpage you are on. Dev Tools is extremely useful, the Console option can be used to debug JavaScript and other web-based programs. You can also download a special Dev Tool extension for Chrome mentioned in the installation guide above that is really helpful for debugging React applications.
+DOM stands for the Document Object Model. If you type ctrl+shift+c while in the browser, you will pull up Dev Tools. In the Elements tab, you can view the DOM tree that represents the current webpage you are on. This tree is bulit based on the HTML you have written and then parsed by the browser to create the webpage you are currently on.
+
+### Dev Tools
+
+Dev Tools is extremely useful, the Console option can be used to debug JavaScript and other web-based programs. You can also download a special Dev Tool extension for Chrome (React Dev Tools) mentioned in the installation guide above that is really helpful for debugging React applications. With this extension you can view the state of each of your components, and view all child components being rendred.
 
 ### Keys in React
 
-Keys in React are used to differntiate between different child components. When these child components are changed the DOM is able to compare each component using its unique key and decide if it needs to be rerendered. This helps React to change the DOM as little as possible, making it more efficient.
+Keys in React are used to differntiate between different child components. When rendering many of the same child component, React needs to keep track of which children need to rerendered and it does so by using a unique key prop that is passed to each child component. When these child components are changed the DOM is able to compare each child component using its unique key and decide if it needs to be rerendered. This helps React to change the DOM as little as possible, making it more efficient. If you don't include keys when rendering many of the same child components in a loop, you can expect to get some strange errors. React may not be able to tell which child components need to be updated, etc.
 
 ### HTML
 
@@ -211,9 +215,7 @@ The Course.js component displays a collapsible panel for each individual course 
 
 ### Section
 
-We finally create a table and display all of the sections available for that course.
-
-As you can see, data trickled all the way down from App.js to the deepest child component.
+We finally create a table and display all of the sections available for that course. As you can see, data trickled all the way down from App.js to the deepest child component. This idea that data flows from the parent component to child is called unidirectional data flow. There are other data flow paradigms that React applications can follow like one-way data flow using state management containers like Redux.
 
 #### License
 
